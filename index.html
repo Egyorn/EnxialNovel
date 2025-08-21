@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Novel</title>
+</head>
+<body>
+  <h1>📚 Daftar Novel</h1>
+  <ul id="novel-list"></ul>
+  <p id="error" style="color:red;"></p>
+
+  <script>
+    fetch("novels.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Gagal memuat novels.json");
+        return response.json();
+      })
+      .then(novels => {
+        const list = document.getElementById("novel-list");
+        novels.forEach(novel => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="reader.html?id=${novel.id}">${novel.title} - ${novel.author}</a>`;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => {
+        document.getElementById("error").textContent = "⚠ " + err.message;
+      });
+  </script>
+</body>
+</html>
