@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Daftar Novel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>📚 Daftar Novel</h1>
   <ul id="novel-list"></ul>
   <p id="error" style="color:red;"></p>
 
- <img id="poster" style="width:200px; margin:10px 0;" />
-
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const novelId = urlParams.get("id");
-
-  fetch("novels.json")
-    .then(res => res.json())
-    .then(novels => {
-      const novel = novels.find(n => n.id === novelId);
-      if (novel) {
-        document.getElementById("title").textContent = novel.title;
-        document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
-        document.getElementById("poster").src = novel.poster;
-        document.getElementById("content").textContent = novel.content;
-      }
-    });
-</script>
-
+  <script>
+    fetch("novels.json")
+      .then(res => res.json())
+      .then(novels => {
+        const list = document.getElementById("novel-list");
+        novels.forEach(novel => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <a href="reader.html?id=${novel.id}">
+              <img src="${novel.poster}" alt="${novel.title}" style="width:120px; display:block; margin-bottom:5px;">
+              <strong>${novel.title}</strong><br>
+              <em>${novel.author}</em>
+            </a>
+          `;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => {
+        document.getElementById("error").textContent = "⚠ " + err.message;
+      });
+  </script>
 </body>
 </html>
