@@ -9,26 +9,29 @@
   <a href="index.html">⬅ Kembali ke daftar</a>
   <h1 id="title"></h1>
   <p><em id="author"></em></p>
+  <img id="poster" style="width:200px; margin:10px 0;" />
   <div id="content"></div>
 
-<img id="poster" style="width:200px; margin:10px 0;" />
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const novelId = urlParams.get("id");
 
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const novelId = urlParams.get("id");
-
-  fetch("novels.json")
-    .then(res => res.json())
-    .then(novels => {
-      const novel = novels.find(n => n.id === novelId);
-      if (novel) {
-        document.getElementById("title").textContent = novel.title;
-        document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
-        document.getElementById("poster").src = novel.poster;
-        document.getElementById("content").textContent = novel.content;
-      }
-    });
-</script>
-
+    fetch("novels.json")
+      .then(res => res.json())
+      .then(novels => {
+        const novel = novels.find(n => n.id === novelId);
+        if (novel) {
+          document.getElementById("title").textContent = novel.title;
+          document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
+          document.getElementById("poster").src = novel.poster;
+          document.getElementById("content").textContent = novel.content;
+        } else {
+          document.getElementById("content").textContent = "Novel tidak ditemukan.";
+        }
+      })
+      .catch(err => {
+        document.getElementById("content").textContent = "⚠ " + err.message;
+      });
+  </script>
 </body>
 </html>
