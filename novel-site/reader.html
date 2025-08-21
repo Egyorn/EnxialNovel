@@ -6,11 +6,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="index.html">⬅ Kembali ke daftar</a>
-  <h1 id="title"></h1>
-  <p><em id="author"></em></p>
-  <img id="poster" style="width:200px; margin:10px 0;" />
-  <div id="content" style="margin-top:20px; white-space:pre-line;"></div>
+  <header>
+    <h1>📖 Baca Novel</h1>
+    <p>Nikmati cerita pilihan Anda</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="btn">⬅ Kembali ke daftar</a>
+    <h2 id="title"></h2>
+    <p><em id="author"></em></p>
+    <img id="poster" />
+    <div id="content"></div>
+  </main>
+
+  <footer>
+    &copy; 2025 Perpustakaan Novel. All rights reserved.
+  </footer>
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
