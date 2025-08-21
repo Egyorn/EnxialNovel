@@ -11,24 +11,24 @@
   <p><em id="author"></em></p>
   <div id="content"></div>
 
-  <script>
-    // Ambil parameter ID dari URL (misal: ?id=novel1)
-    const urlParams = new URLSearchParams(window.location.search);
-    const novelId = urlParams.get("id");
+<img id="poster" style="width:200px; margin:10px 0;" />
 
-    // Ambil data dari JSON
-    fetch("novels.json")
-      .then(response => response.json())
-      .then(novels => {
-        const novel = novels.find(n => n.id === novelId);
-        if (novel) {
-          document.getElementById("title").textContent = novel.title;
-          document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
-          document.getElementById("content").textContent = novel.content;
-        } else {
-          document.getElementById("content").textContent = "Novel tidak ditemukan.";
-        }
-      });
-  </script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const novelId = urlParams.get("id");
+
+  fetch("novels.json")
+    .then(res => res.json())
+    .then(novels => {
+      const novel = novels.find(n => n.id === novelId);
+      if (novel) {
+        document.getElementById("title").textContent = novel.title;
+        document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
+        document.getElementById("poster").src = novel.poster;
+        document.getElementById("content").textContent = novel.content;
+      }
+    });
+</script>
+
 </body>
 </html>
