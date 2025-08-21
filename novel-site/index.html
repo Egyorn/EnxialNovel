@@ -17,6 +17,7 @@
         const list = document.getElementById("novel-list");
         novels.forEach(novel => {
           const li = document.createElement("li");
+          li.style.marginBottom = "20px";
           li.innerHTML = `
             <a href="reader.html?id=${novel.id}">
               <img src="${novel.poster}" alt="${novel.title}" style="width:120px; display:block; margin-bottom:5px;">
