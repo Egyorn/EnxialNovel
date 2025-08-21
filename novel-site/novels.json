@@ -1,16 +1,67 @@
 [
-  {
-    "id": "novel1",
-    "title": "Matahari Terakhir",
-    "author": "Enkos Kosasih",
-    "poster": "../images/novel1.jpg",
-    "content": "Ini adalah isi novel pertama. Bisa panjang sekali, bahkan ber-bab-bab..."
-  },
-  {
-    "id": "novel2",
-    "title": "Bayangan di Sekolah",
-    "author": "Enkos Kosasih",
-    "poster": "../images/novel2.jpg",
-    "content": "Cerita ini tentang sebuah sekolah yang menyimpan misteri..."
-  }
+    {
+        "id": "novel1",
+        "title": "Topeng Misterius",
+        "author": "Enkos Kosasih",
+        "poster": "../images/novel1.jpg",
+        "content": [
+            "Rian, seorang fotografer dokumenter dari Bandung, selalu mencari cerita di balik lensa kameranya. Kali ini, pencariannya membawanya ke Desa Cisarua, sebuah desa terpencil yang terhimpit di antara lembah-lembah hijau di pedalaman Jawa Barat.",
+            "Desa itu terkenal dengan tradisi Jaipong Topeng Hujan, sebuah tarian sakral yang konon bisa memanggil atau menghentikan hujan. Rian datang untuk mengabadikan ritual itu, namun yang ia temukan lebih dari sekadar tarian.",
+            "Malam pertama Rian di Cisarua disambut gerimis yang tak henti-henti. Udara terasa berat, dipenuhi aroma tanah basah dan wangi kemenyan yang samar-samar terbawa angin. Ia menginap di rumah Pak Asep, juru kunci desa yang ramah namun sorot matanya menyimpan sesuatu yang tak terucap.",
+            "Di dinding ruang tamunya, tergantung sebuah topeng kayu tua yang dipahat dengan ekspresi penderitaan yang begitu nyata. Matanya seolah berlubang hampa, namun Rian merasa ada yang terus-menerus mengawasinya dari sana..",
+            "Itu Topeng Sang Penunggu, Mas Rian. Tidak pernah dipakai menari lagi, ujar Pak Asep ketika melihat Rian memandangi topeng itu. Suaranya pelan, nyaris berbisik. Topeng itu mendengar lebih banyak daripada yang seharusnya",
+            "Malam itu, Rian tidak bisa tidur. Dari luar jendela kamarnya, ia samar-samar mendengar suara gamelan lirih yang aneh, seolah dimainkan di bawah air. Suara itu bercampur dengan bisikan-bisikan dalam bahasa Sunda kuno yang tak ia mengerti, terdengar seperti rintihan seseorang di tengah hujan.",
+            "Keesokan harinya, Rian mencoba bertanya pada warga tentang Topeng Sang Penunggu. Namun, setiap kali ia menyebut nama topeng itu, orang-orang akan mengalihkan pembicaraan atau tiba-tiba menjadi sibuk. Ada ketakutan yang terorganisir di desa ini, sebuah tabu yang dijaga bersama.",
+            "Rian hanya mendapat sedikit petunjuk dari Nyi Iteung, seorang nenek renta penjual jamu yang matanya sudah mulai rabun. 'Anak muda, jangan mencari tahu apa yang tidak ingin ditemukan,' desisnya sambil menyerahkan segelas jahe hangat.",
+            "Dulu, ada seorang penari yang menari dengan topeng itu. Tariannya indah, terlalu indah sampai para 'penunggu' lembah pun ikut menari bersamanya. Tapi ia tak pernah bisa berhenti.",
+            "Rasa penasaran Rian semakin tak terbendung. Dengan nekat, pada malam kedua, saat hujan turun lebih deras, ia menyelinap kembali ke rumah Pak Asep. Ia berdiri di depan topeng kayu itu, merasakan aura dingin yang menusuk.",
+            "Melalui lensa kameranya, ia mencoba mengambil beberapa gambar. Saat blitz menyala, untuk sepersekian detik, Rian bersumpah melihat ukiran di bibir topeng itu bergerak, membentuk sebuah senyuman menyeringai yang mengerikan. Jantungnya serasa berhenti berdetak.",
+            "Di saat yang sama, ia mendengar suara tangisan perempuan dari arah lumbung padi di belakang rumah. Suara tangisan yang sama persis dengan bisikan yang ia dengar semalam.",
+            "Didorong oleh adrenalin dan ketakutan, Rian mendekati lumbung padi itu. Pintunya tidak terkunci. Di dalamnya gelap dan pengap, berbau gabah busuk. Dengan bantuan senter ponselnya, ia melihat sesuatu yang membuatnya mual.",
+            "Di sudut lumbung, di atas tumpukan jerami, terbaring seorang perempuan muda dengan pakaian penari yang kumal. Wajahnya pucat pasi, matanya terpejam, namun tubuhnya terus bergerak-gerak kecil, seolah sedang menari dalam tidurnya. Kakinya gemetar mengikuti irama gamelan gaib yang hanya bisa ia dengar.",
+            "Itu adalah Lilis, cucu Pak Asep, yang dikabarkan telah 'pergi merantau' setahun yang lalu.",
+            "Pak Asep memergoki Rian. Dengan air mata berlinang, ia akhirnya menceritakan kutukan itu. Lilis, dalam usahanya untuk menjadi penari terhebat, telah nekat memakai Topeng Sang Penunggu. Sejak saat itu, jiwanya terperangkap",
+            "Ia menari tanpa henti dalam alamnya sendiri, tubuhnya perlahan layu. Suara gamelan dan bisikan di malam hari adalah gema dari tarian abadinya. Warga desa tahu, namun mereka tak berdaya dan memilih untuk menyembunyikan aib ini.",
+            "'Topeng itu hidup, Mas Rian,' isak Pak Asep. 'Ia memakan jiwa penarinya untuk tetap abadi. Setiap hujan turun, bisikannya semakin kuat, memanggil jiwa Lilis untuk menari lebih kencang.'",
+            "Rian tahu ia tidak bisa pergi begitu saja. Ia merasa bertanggung jawab. Ia membaca beberapa catatan lama yang disimpan Pak Asep, peninggalan kakek buyutnya. Di sana tertulis, satu-satunya cara melepaskan jiwa yang terperangkap adalah dengan 'menghancurkan panggungnya'",
+            "Malam itu adalah puncak musim hujan, saat kekuatan gaib di desa itu terasa paling kuat. Rian, dibantu oleh Pak Asep, melakukan hal yang paling dilarang: mereka menurunkan Topeng Sang Penunggu dari dinding.",
+            "Saat Rian menyentuh kayu topeng itu, ribuan bisikan langsung menyerbu kepalanya. Gambaran-gambaran mengerikan tentang para penari sebelumnya yang bernasib sama seperti Lilis melintas di benaknya. Mereka semua tersenyum dengan senyum penderitaan yang sama.",
+            "Mereka membawa topeng itu ke tengah desa, tempat sebuah panggung batu tua berdiri. Sesuai petunjuk dalam catatan, mereka harus menghancurkan topeng itu di atas panggung tersebut tepat di tengah malam.",
+            "Namun, saat mereka tiba, seluruh warga desa telah berkumpul, mata mereka menyala hampa dalam kegelapan. Mereka bergerak serempak, bukan untuk menolong, tapi untuk menghentikan Rian. 'Jangan hentikan tariannya!' seru mereka bersamaan, suara mereka terdengar bukan seperti suara manusia. 'Hujan ini adalah berkah! Penderitaannya adalah kemakmuran kami!'",
+            "Rian sadar. Desa ini telah membuat perjanjian dengan entitas penunggu topeng itu. Mereka mengorbankan jiwa penari untuk mendapatkan panen yang melimpah dari hujan yang terus-menerus.",
+            "Pertarungan pun terjadi. Rian dan Pak Asep melawan kepungan warga yang seolah kerasukan. Di tengah kekacauan itu, Rian berhasil mencapai panggung batu dan dengan sekuat tenaga membanting topeng itu ke atasnya.",
+            "Topeng itu pecah berkeping-keping. Seketika, angin berhenti bertiup. Hujan reda. Bisikan dan suara gamelan lenyap. Keheningan total yang terasa lebih mengerikan daripada badai terburuk menyelimuti desa. Warga desa yang mengepung mereka jatuh pingsan. Dari arah lumbung, terdengar jeritan panjang Lilis, diikuti oleh keheningan",
+            "Rian tak pernah tahu apa yang terjadi pada Lilis. Ia melarikan diri dari desa itu sebelum fajar menyingsing, meninggalkan kameranya. Ia tidak pernah kembali. Kadang, di malam hari saat gerimis turun di Bandung, ia masih bisa mendengar bisikan samar dalam bahasa Sunda kuno, dan ia tahu, meski topengnya hancur, bisikan itu akan selalu mencarinya dalam setiap tetes air hujan."
+
+        ]
+    },
+    {
+        "id": "novel2",
+        "title": "Hantu Pohon Jati",
+        "author": "Enkos Kosasih",
+        "poster": "../images/novel2.jpg",
+        "content": [
+            " Di pinggiran Desa Sumberrejo, Jawa Tengah, malam selalu terasa lebih gelap. Pohon-pohon jati yang menjulang di tepi sawah seolah menelan cahaya bulan. Penduduk desa, yang mayoritas petani, jarang keluar rumah setelah magrib. Bukan karena takut gelap, tapi karena cerita-cerita yang diturunkan dari generasi ke generasi: tentang pocong yang muncul di bawah pohon jati tua di ujung desa.",
+            "Slamet, seorang pemuda berusia 27 tahun, baru saja pulang dari kota. Ia kembali ke Sumberrejo setelah ibunya, Mbok Sari, meninggal dunia. Rumah kayu sederhana yang dulu penuh tawa kini terasa hampa. Slamet duduk di beranda, memandang sawah yang berkabut. Di kejauhan, pohon jati tua itu berdiri angker, dahan-dahannya bergoyang pelan meski tak ada angin.",
+            "'Mas, jangan lama-lama di luar. Malam ini malam Jumat,' kata Pak Karto, tetangga sebelah, sambil menenteng cangkul.",
+            "Slamet tersenyum kecil. 'Bapak percaya sama cerita pocong itu?'",
+            "Pak Karto menghela napas. “Bukan percaya atau nggak, Mas. Tapi dulu, bapakmu sendiri yang lihat. Pocong itu muncul pas malam Jumat Kliwon. Bapakmu bilang, itu hantu orang yang mati nggak wajar.” ",
+            "Slamet mengangguk, tapi hatinya ragu. Ia anak kota sekarang, lulusan teknik sipil, dan cerita hantu terasa seperti dongeng untuk menakut-nakuti anak kecil. ",
+            "Tapi malam itu, saat ia tidur, suara aneh membangunkannya. Seperti kain kafan yang bergesekan dengan tanah, diikuti bau tanah basah yang menyengat. Ia bangkit, mengintip dari jendela. Di bawah pohon jati, sesosok bayangan putih berdiri tegak, tali kafannya berkibar pelan.",
+            "Pagi harinya, Slamet mencoba melupakan apa yang dilihatnya. Ia pergi ke warung kopi di tengah desa, tempat para warga berkumpul. Di sana, ia mendengar kabar bahwa seorang gadis bernama Sari hilang sejak dua hari lalu. Sari, anak Pak Mulyo, dikenal pendiam dan jarang keluar rumah. Terakhir kali terlihat, ia sedang mencari kayu bakar di dekat pohon jati tua.",
+            "“Pasti ulah si pocong,” bisik Mbah Joyo, dukun desa, sambil mengunyah pinang. “Itu hantu orang yang dikubur nggak beres. Kain kafannya nggak dilepas, jadinya dia gentayangan.”",
+            "Slamet mencoba mencerna ucapan Mbah Joyo. Ia teringat ibunya yang pernah bercerita tentang kematian ayahnya, Pak Slamet, yang meninggal dalam kecelakaan traktor sepuluh tahun lalu. Ibunya bilang, ayahnya dimakamkan tergesa-gesa karena keluarga tak punya cukup uang untuk upacara adat yang layak. Apakah itu ada hubungannya?",
+            "Malam itu, Slamet memutuskan untuk menyelidiki. Ia membawa senter dan sebilah golok, berjalan menyusuri pematang sawah menuju pohon jati. Kabut tebal menyelimuti desa, dan suara jangkrik terdengar seperti nyanyian pemakaman. Saat ia mendekati pohon, bau tanah basah kembali tercium. Di bawah pohon, ia menemukan sesuatu: sehelai kain putih yang robek, tersangkut di akar. Kain itu terasa dingin, seperti baru keluar dari kubur.",
+            "Tiba-tiba, suara gesekan kain terdengar di belakangnya. Slamet menoleh, jantungannya berdegup kencang. Sosok pocong itu ada di sana, berdiri di tengah kabut, matanya tak terlihat, tapi Slamet merasa ditatap. Ia mencoba berlari, tapi kakinya seperti terpaku. Pocong itu melayang mendekat, dan suara serak keluar dari mulutnya yang tak terlihat: “Kembalikan… taliku…”",
+            "Slamet terbangun di ranjangnya, berkeringat dingin. Apakah itu mimpi? Tapi kain putih yang ia temukan masih ada di tangannya, basah dan berbau tanah. Ia memutuskan untuk mencari tahu lebih banyak. Ia pergi ke rumah Mbah Joyo, membawa kain itu. Mbah Joyo memandang kain itu dengan wajah pucat.",
+            "“Ini kain kafan,” katanya. “Seseorang dikubur tanpa dilepaskan talinya. Rohnya nggak bisa tenang.”",
+            "Slamet teringat ayahnya. Ia pergi ke makam ayahnya di ujung desa, dekat pohon jati. Makam itu sederhana, hanya ditandai batu nisan kecil. Dengan bantuan Pak Karto, ia membongkar makam itu. Di dalam peti tua, ia menemukan sesuatu yang membuat darahnya membeku: kain kafan ayahnya masih utuh, dengan tali yang terikat erat di bagian kepala dan kaki.",
+            "Mbah Joyo datang dan melakukan ritual sederhana, melepas tali kafan sambil membaca doa. Saat tali itu terlepas, angin dingin berhembus, dan kabut di sekitar pohon jati seolah lenyap. Slamet merasa beban di dadanya hilang. Tapi pertanyaan tentang Sari masih ada. Apakah pocong itu juga yang mengambilnya?",
+            "Slamet kembali ke pohon jati malam itu, kali ini bersama Pak Mulyo dan beberapa warga. Mereka membawa cangkul dan senter, berniat mencari petunjuk tentang Sari. Di bawah pohon, mereka menemukan lubang kecil yang tertutup ranting. Di dalamnya, mereka menemukan Sari, pingsan tapi masih hidup, dengan luka di kakinya. Ia mengigau, menyebut-nyebut “hantu putih” yang mengejarnya.",
+            "Sari akhirnya sadar dan bercerita. Ia tersesat di sawah malam itu dan melihat sosok pocong. Ketakutan, ia lari dan terperosok ke lubang itu, tak bisa keluar. Tapi yang aneh, ia merasa pocong itu tidak ingin mencelakainya, melainkan seperti menunjukkan sesuatu.",
+            "Slamet mulai menyadari bahwa pocong itu, mungkin roh ayahnya, bukan ingin menakuti, tapi meminta tolong. Dengan melepas tali kafan, roh ayahnya akhirnya tenang, dan kejadian aneh di desa berhenti. Sari pulih, dan desa kembali damai, meski cerita tentang pocong di bawah pohon jati tetap jadi legenda.",
+            "Slamet memutuskan tinggal di Sumberrejo. Ia merenovasi rumah ibunya dan mulai bertani, seperti yang selalu diinginkan ayahnya. Setiap malam Jumat Kliwon, ia meletakkan sesajen kecil di bawah pohon jati, bukan karena takut, tapi sebagai tanda hormat. Desa itu tetap sunyi, tapi kini, sunyinya terasa damai."
+
+        ]
+    }
 ]
