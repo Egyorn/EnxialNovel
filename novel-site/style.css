@@ -3,10 +3,16 @@ body {
   margin: 20px;
   line-height: 1.6;
 }
+
 h1 {
   color: darkblue;
 }
-#content {
-  margin-top: 20px;
-  white-space: pre-line; /* Supaya paragraf ikut rapi */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
 }
