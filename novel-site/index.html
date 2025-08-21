@@ -6,9 +6,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>📚 Daftar Novel</h1>
-  <ul id="novel-list"></ul>
-  <p id="error" style="color:red;"></p>
+  <header>
+    <h1>📚 Perpustakaan Novel</h1>
+    <p>Koleksi cerita menarik untuk dibaca</p>
+  </header>
+
+  <main>
+    <h2>Daftar Novel</h2>
+    <ul id="novel-list"></ul>
+    <p id="error" class="error"></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Perpustakaan Novel. All rights reserved.
+  </footer>
 
   <script>
     fetch("novels.json")
@@ -17,12 +28,13 @@
         const list = document.getElementById("novel-list");
         novels.forEach(novel => {
           const li = document.createElement("li");
-          li.style.marginBottom = "20px";
           li.innerHTML = `
-            <a href="reader.html?id=${novel.id}">
-              <img src="${novel.poster}" alt="${novel.title}" style="width:120px; display:block; margin-bottom:5px;">
-              <strong>${novel.title}</strong><br>
-              <em>${novel.author}</em>
+            <a href="reader.html?id=${novel.id}" class="card">
+              <img src="${novel.poster}" alt="${novel.title}">
+              <div class="card-content">
+                <strong>${novel.title}</strong>
+                <em>${novel.author}</em>
+              </div>
             </a>
           `;
           list.appendChild(li);
