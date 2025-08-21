@@ -1,16 +1,8 @@
-[
-  {
-    "id": "novel1",
-    "title": "Matahari Terakhir",
-    "author": "Enkos Kosasih",
-    "poster": "images/novel1.jpg",
-    "content": "Ini adalah isi novel pertama. Bisa panjang sekali..."
-  },
-  {
-    "id": "novel2",
-    "title": "Bayangan di Sekolah",
-    "author": "Enkos Kosasih",
-    "poster": "images/novel2.jpg",
-    "content": "Cerita ini tentang sebuah sekolah yang menyimpan misteri..."
-  }
-]
+{
+  "id": "novel1",
+  "title": "Matahari Terakhir",
+  "author": "Enkos Kosasih",
+  "poster": "../Images/novel1.jpg",
+  "content": "Isi novel pertama..."
+}
+
