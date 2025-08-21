@@ -24,26 +24,86 @@
     &copy; 2025 Emxial Novel. All rights reserved.
   </footer>
 
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const novelId = urlParams.get("id");
+ <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const novelId = urlParams.get("id");
 
-    fetch("novels.json")
-      .then(res => res.json())
-      .then(novels => {
-        const novel = novels.find(n => n.id === novelId);
-        if (novel) {
-          document.getElementById("title").textContent = novel.title;
-          document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
-          document.getElementById("poster").src = novel.poster;
-          document.getElementById("content").textContent = novel.content;
-        } else {
-          document.getElementById("content").textContent = "Novel tidak ditemukan.";
+  fetch("novels.json")
+    .then(res => res.json())
+    .then(novels => {
+      const novel = novels.find(n => n.id === novelId);
+      if (novel) {
+        document.getElementById("title").textContent = novel.title;
+        document.getElementById("author").textContent = "Ditulis oleh: " + novel.author;
+        document.getElementById("poster").src = novel.poster;
+
+        // 🔹 Tambahan untuk pagination
+        let currentPage = 0;
+        let pages = [];
+        const content = novel.content;
+        const chunkSize = 1500;
+
+        // Bagi content menjadi beberapa halaman
+        for (let i = 0; i < content.length; i += chunkSize) {
+          pages.push(content.slice(i, i + chunkSize));
         }
-      })
-      .catch(err => {
-        document.getElementById("content").textContent = "⚠ " + err.message;
-      });
-  </script>
+
+        // Render halaman pertama
+        renderPage();
+
+        // Jika ada lebih dari 1 halaman, tampilkan tombol
+        if (pages.length > 1) {
+          renderPagination();
+        }
+
+        function renderPage() {
+          document.getElementById("content").textContent = pages[currentPage];
+        }
+
+        function renderPagination() {
+          const nav = document.createElement("div");
+          nav.className = "pagination";
+
+          const prev = document.createElement("button");
+          prev.textContent = "⬅ Prev";
+          prev.disabled = currentPage === 0;
+          prev.onclick = () => {
+            if (currentPage > 0) {
+              currentPage--;
+              renderPage();
+              updateButtons(prev, next);
+            }
+          };
+
+          const next = document.createElement("button");
+          next.textContent = "Next ➡";
+          next.disabled = currentPage === pages.length - 1;
+          next.onclick = () => {
+            if (currentPage < pages.length - 1) {
+              currentPage++;
+              renderPage();
+              updateButtons(prev, next);
+            }
+          };
+
+          nav.appendChild(prev);
+          nav.appendChild(next);
+          document.querySelector("main").appendChild(nav);
+        }
+
+        function updateButtons(prev, next) {
+          prev.disabled = currentPage === 0;
+          next.disabled = currentPage === pages.length - 1;
+        }
+
+      } else {
+        document.getElementById("content").textContent = "Novel tidak ditemukan.";
+      }
+    })
+    .catch(err => {
+      document.getElementById("content").textContent = "⚠ " + err.message;
+    });
+</script>
+
 </body>
 </html>
